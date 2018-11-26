@@ -1,18 +1,18 @@
 package edu.insightr.gildedrose;
 
-public class Item {
+public abstract class Item implements IStrategyUpdate{
 
-    private String name;
-    private int sellIn;
+    protected String name;
+    protected int sellIn;
 
-    private int quality;
+    protected int quality;
 
-    public Item(String name, int sellIn, int quality) {
+    /*public Item(String name, int sellIn, int quality) {
         super();
         this.name = name;
         this.sellIn = sellIn;
         this.quality = quality;
-    }
+    }*/
 
     public String getName() {
         return name;
